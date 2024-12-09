@@ -149,24 +149,6 @@ feature calt {
     sub bar' bracketright by SPC;
   } bar_bracketright.liga;
 
-  # //
-  lookup slash_slash.liga {
-    ignore sub slash slash' slash;
-    ignore sub slash' slash slash;
-    ignore sub slash' slash equal;
-    sub SPC slash' by slash_slash.liga;
-    sub slash' slash by SPC;
-  } slash_slash.liga;
-
-  # ///
-  lookup slash_slash_slash.liga {
-    ignore sub slash slash' slash slash;
-    ignore sub slash' slash slash slash;
-    sub SPC SPC slash' by slash_slash_slash.liga;
-    sub SPC slash' slash by SPC;
-    sub slash' slash slash by SPC;
-  } slash_slash_slash.liga;
-
   # /*
   lookup slash_asterisk.liga {
     ignore sub slash slash' asterisk;
