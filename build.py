@@ -22,7 +22,7 @@ from source.py.utils import (
 )
 from source.py.feature import freeze_feature, get_freeze_config_str
 
-version = "7.000 beta31"
+version = "7.000 beta32"
 # =========================================================================================
 
 
@@ -202,11 +202,11 @@ class FontConfig:
             "ss02": "ignore",
             "ss03": "ignore",
             "ss04": "ignore",
-            "ss05": "ignore",
+            "ss05": "enable",
             "ss06": "ignore",
             "ss07": "ignore",
-            "ss08": "ignore",
-            "zero": "ignore",
+            "ss08": "enable",
+            "zero": "enable",
         }
         # Nerd-Font settings
         self.nerd_font = {
