@@ -1465,56 +1465,10 @@ feature locl {
     sub IJ acutecomb by IJ_acute;
   } locl_latn_3;
 } locl;
-feature subs {
-  sub zero by zeroinferior;
-  sub one by oneinferior;
-  sub two by twoinferior;
-  sub three by threeinferior;
-  sub four by fourinferior;
-  sub five by fiveinferior;
-  sub six by sixinferior;
-  sub seven by seveninferior;
-  sub eight by eightinferior;
-  sub nine by nineinferior;
-} subs;
-feature sinf {
-  sub zero by zeroinferior;
-  sub one by oneinferior;
-  sub two by twoinferior;
-  sub three by threeinferior;
-  sub four by fourinferior;
-  sub five by fiveinferior;
-  sub six by sixinferior;
-  sub seven by seveninferior;
-  sub eight by eightinferior;
-  sub nine by nineinferior;
-} sinf;
-feature sups {
-  sub zero by zerosuperior;
-  sub one by onesuperior;
-  sub two by twosuperior;
-  sub three by threesuperior;
-  sub four by foursuperior;
-  sub five by fivesuperior;
-  sub six by sixsuperior;
-  sub seven by sevensuperior;
-  sub eight by eightsuperior;
-  sub nine by ninesuperior;
-  sub plus by plussuperior;
-} sups;
 feature frac {
   lookup FRAC {
     sub slash by fraction;
   } FRAC;
-
-  lookup UP {
-    sub [zero one two three four five six seven eight nine] by [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr];
-  } UP;
-
-  lookup DOWN {
-    sub fraction [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr]' by [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
-    sub [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom] [zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr]' by [zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom];
-  } DOWN;
 } frac;
 feature ordn {
   sub [zero one two three four five six seven eight nine] [A a]' by ordfeminine;
