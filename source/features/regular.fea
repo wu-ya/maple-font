@@ -148,24 +148,6 @@ feature calt {
     sub bar' bracketright by SPC;
   } bar_bracketright.liga;
 
-  # //
-  lookup slash_slash.liga {
-    ignore sub slash slash' slash;
-    ignore sub slash' slash slash;
-    ignore sub slash' slash equal;
-    sub SPC slash' by slash_slash.liga;
-    sub slash' slash by SPC;
-  } slash_slash.liga;
-
-  # ///
-  lookup slash_slash_slash.liga {
-    ignore sub slash slash' slash slash;
-    ignore sub slash' slash slash slash;
-    sub SPC SPC slash' by slash_slash_slash.liga;
-    sub SPC slash' slash by SPC;
-    sub slash' slash slash by SPC;
-  } slash_slash_slash.liga;
-
   # /*
   lookup slash_asterisk.liga {
     ignore sub slash slash' asterisk;
@@ -1520,30 +1502,6 @@ feature sups {
   sub nine by ninesuperior;
   sub plus by plussuperior;
 } sups;
-feature numr {
-  sub zero by zero.numr;
-  sub one by one.numr;
-  sub two by two.numr;
-  sub three by three.numr;
-  sub four by four.numr;
-  sub five by five.numr;
-  sub six by six.numr;
-  sub seven by seven.numr;
-  sub eight by eight.numr;
-  sub nine by nine.numr;
-} numr;
-feature dnom {
-  sub zero by zero.dnom;
-  sub one by one.dnom;
-  sub two by two.dnom;
-  sub three by three.dnom;
-  sub four by four.dnom;
-  sub five by five.dnom;
-  sub six by six.dnom;
-  sub seven by seven.dnom;
-  sub eight by eight.dnom;
-  sub nine by nine.dnom;
-} dnom;
 feature frac {
   lookup FRAC {
     sub slash by fraction;
