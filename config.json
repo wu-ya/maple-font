@@ -19,13 +19,13 @@
     "cv99": "ignore",
     "ss01": "ignore",
     "ss02": "ignore",
-    "ss03": "ignore",
+    "ss03": "enable",
     "ss04": "ignore",
-    "ss05": "ignore",
+    "ss05": "enable",
     "ss06": "ignore",
-    "ss07": "ignore",
-    "ss08": "ignore",
-    "zero": "ignore"
+    "ss07": "enable",
+    "ss08": "enable",
+    "zero": "enable"
   },
   "nerd_font": {
     "enable": true,
