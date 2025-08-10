@@ -364,44 +364,44 @@ feature calt {
 
   # <:
   lookup less_colon.liga {
-    ignore sub less less' colon;
-    ignore sub less' colon @IgnoreColon;
-    sub SPC colon' by less_colon.liga;
-    sub less' colon by SPC;
+    # ignore sub less less' colon;
+    # ignore sub less' colon @IgnoreColon;
+    # sub SPC colon' by less_colon.liga;
+    # sub less' colon by SPC;
   } less_colon.liga;
 
   # :>
   lookup colon_greater.liga {
-    ignore sub @IgnoreColon colon' greater;
-    ignore sub colon' greater greater;
-    sub SPC greater' by colon_greater.liga;
-    sub colon' greater by SPC;
+    # ignore sub @IgnoreColon colon' greater;
+    # ignore sub colon' greater greater;
+    # sub SPC greater' by colon_greater.liga;
+    # sub colon' greater by SPC;
   } colon_greater.liga;
 
   # :<
   lookup colon_less.liga {
-    ignore sub @IgnoreColon colon' less;
-    ignore sub colon' less @IgnoreMarkup;
-    sub SPC less' by colon_less.liga;
-    sub colon' less by SPC;
+    # ignore sub @IgnoreColon colon' less;
+    # ignore sub colon' less @IgnoreMarkup;
+    # sub SPC less' by colon_less.liga;
+    # sub colon' less by SPC;
   } colon_less.liga;
 
   # <:<
   lookup less_colon_less.liga {
-    ignore sub less less' colon less;
-    ignore sub less' colon less @IgnoreMarkup;
-    sub SPC SPC less' by less_colon_less.liga;
-    sub SPC colon' less by SPC;
-    sub less' colon less by SPC;
+    # ignore sub less less' colon less;
+    # ignore sub less' colon less @IgnoreMarkup;
+    # sub SPC SPC less' by less_colon_less.liga;
+    # sub SPC colon' less by SPC;
+    # sub less' colon less by SPC;
   } less_colon_less.liga;
 
   # >:>
   lookup greater_colon_greater.liga {
-    ignore sub @IgnoreMarkup greater' colon greater;
-    ignore sub greater' colon greater greater;
-    sub SPC SPC greater' by greater_colon_greater.liga;
-    sub SPC colon' greater by SPC;
-    sub greater' colon greater by SPC;
+    # ignore sub @IgnoreMarkup greater' colon greater;
+    # ignore sub greater' colon greater greater;
+    # sub SPC SPC greater' by greater_colon_greater.liga;
+    # sub SPC colon' greater by SPC;
+    # sub greater' colon greater by SPC;
   } greater_colon_greater.liga;
 
   # __
@@ -454,18 +454,18 @@ feature calt {
 
   # #:
   lookup numbersign_colon.liga {
-    ignore sub numbersign numbersign' colon;
-    ignore sub numbersign' colon [colon equal];
-    sub SPC colon' by numbersign_colon.liga;
-    sub numbersign' colon by SPC;
+    # ignore sub numbersign numbersign' colon;
+    # ignore sub numbersign' colon [colon equal];
+    # sub SPC colon' by numbersign_colon.liga;
+    # sub numbersign' colon by SPC;
   } numbersign_colon.liga;
 
   # #=
   lookup numbersign_equal.liga {
-    ignore sub numbersign numbersign' equal;
-    ignore sub numbersign' equal equal;
-    sub SPC equal' by numbersign_equal.liga;
-    sub numbersign' equal by SPC;
+    # ignore sub numbersign numbersign' equal;
+    # ignore sub numbersign' equal equal;
+    # sub SPC equal' by numbersign_equal.liga;
+    # sub numbersign' equal by SPC;
   } numbersign_equal.liga;
 
   # #_
@@ -658,12 +658,12 @@ feature calt {
 
   # !!
   lookup exclam_exclam.liga {
-    ignore sub exclam exclam' exclam;
-    ignore sub exclam' exclam exclam;
-    ignore sub parenleft @Question exclam' exclam;
-    ignore sub parenleft @Question less exclam' exclam;
-    sub SPC exclam' by exclam_exclam.liga;
-    sub exclam' exclam by SPC;
+    # ignore sub exclam exclam' exclam;
+    # ignore sub exclam' exclam exclam;
+    # ignore sub parenleft @Question exclam' exclam;
+    # ignore sub parenleft @Question less exclam' exclam;
+    # sub SPC exclam' by exclam_exclam.liga;
+    # sub exclam' exclam by SPC;
   } exclam_exclam.liga;
 
   # ||
@@ -727,27 +727,27 @@ feature calt {
 
   # /*
   lookup slash_asterisk.liga {
-    ignore sub [slash asterisk] slash' asterisk;
-    ignore sub slash' asterisk [slash asterisk period];
-    sub SPC asterisk' by slash_asterisk.liga;
-    sub slash' asterisk by SPC;
+    # ignore sub [slash asterisk] slash' asterisk;
+    # ignore sub slash' asterisk [slash asterisk period];
+    # sub SPC asterisk' by slash_asterisk.liga;
+    # sub slash' asterisk by SPC;
   } slash_asterisk.liga;
 
   # /**
   lookup slash_asterisk_asterisk.liga {
-    ignore sub [slash asterisk] slash' asterisk asterisk;
-    ignore sub slash' asterisk asterisk [slash asterisk period];
-    sub SPC SPC asterisk' by slash_asterisk_asterisk.liga;
-    sub SPC asterisk' asterisk by SPC;
-    sub slash' asterisk asterisk by SPC;
+    # ignore sub [slash asterisk] slash' asterisk asterisk;
+    # ignore sub slash' asterisk asterisk [slash asterisk period];
+    # sub SPC SPC asterisk' by slash_asterisk_asterisk.liga;
+    # sub SPC asterisk' asterisk by SPC;
+    # sub slash' asterisk asterisk by SPC;
   } slash_asterisk_asterisk.liga;
 
   # */
   lookup asterisk_slash.liga {
-    ignore sub [slash asterisk period] asterisk' slash;
-    ignore sub asterisk' slash [slash asterisk];
-    sub SPC slash' by asterisk_slash.liga;
-    sub asterisk' slash by SPC;
+    # ignore sub [slash asterisk period] asterisk' slash;
+    # ignore sub asterisk' slash [slash asterisk];
+    # sub SPC slash' by asterisk_slash.liga;
+    # sub asterisk' slash by SPC;
   } asterisk_slash.liga;
 
   # ++
@@ -828,10 +828,10 @@ feature calt {
 
   # .=
   lookup period_equal.liga {
-    ignore sub period period' equal;
-    ignore sub period' equal [equal greater];
-    sub SPC equal' by period_equal.liga;
-    sub period' equal by SPC;
+    # ignore sub period period' equal;
+    # ignore sub period' equal [equal greater];
+    # sub SPC equal' by period_equal.liga;
+    # sub period' equal by SPC;
   } period_equal.liga;
 
   # <~
@@ -957,52 +957,52 @@ feature calt {
 
   # <+
   lookup less_plus.liga {
-    ignore sub less less' plus;
-    ignore sub less' plus [plus greater];
-    sub SPC plus' by less_plus.liga;
-    sub less' plus by SPC;
+    # ignore sub less less' plus;
+    # ignore sub less' plus [plus greater];
+    # sub SPC plus' by less_plus.liga;
+    # sub less' plus by SPC;
   } less_plus.liga;
 
   # +>
   lookup plus_greater.liga {
-    ignore sub [plus less] plus' greater;
-    ignore sub plus' greater greater;
-    sub SPC greater' by plus_greater.liga;
-    sub plus' greater by SPC;
+    # ignore sub [plus less] plus' greater;
+    # ignore sub plus' greater greater;
+    # sub SPC greater' by plus_greater.liga;
+    # sub plus' greater by SPC;
   } plus_greater.liga;
 
   # <+>
   lookup less_plus_greater.liga {
-    ignore sub less less' plus greater;
-    ignore sub less' plus greater greater;
-    sub SPC SPC greater' by less_plus_greater.liga;
-    sub SPC plus' greater by SPC;
-    sub less' plus greater by SPC;
+    # ignore sub less less' plus greater;
+    # ignore sub less' plus greater greater;
+    # sub SPC SPC greater' by less_plus_greater.liga;
+    # sub SPC plus' greater by SPC;
+    # sub less' plus greater by SPC;
   } less_plus_greater.liga;
 
   # <*
   lookup less_asterisk.liga {
-    ignore sub less less' asterisk;
-    ignore sub less' asterisk [asterisk greater];
-    sub SPC asterisk' by less_asterisk.liga;
-    sub less' asterisk by SPC;
+    # ignore sub less less' asterisk;
+    # ignore sub less' asterisk [asterisk greater];
+    # sub SPC asterisk' by less_asterisk.liga;
+    # sub less' asterisk by SPC;
   } less_asterisk.liga;
 
   # *>
   lookup asterisk_greater.liga {
-    ignore sub [asterisk less] asterisk' greater;
-    ignore sub asterisk' greater greater;
-    sub SPC greater' by asterisk_greater.liga;
-    sub asterisk' greater by SPC;
+    # ignore sub [asterisk less] asterisk' greater;
+    # ignore sub asterisk' greater greater;
+    # sub SPC greater' by asterisk_greater.liga;
+    # sub asterisk' greater by SPC;
   } asterisk_greater.liga;
 
   # <*>
   lookup less_asterisk_greater.liga {
-    ignore sub less less' asterisk greater;
-    ignore sub less' asterisk greater greater;
-    sub SPC SPC greater' by less_asterisk_greater.liga;
-    sub SPC asterisk' greater by SPC;
-    sub less' asterisk greater by SPC;
+    # ignore sub less less' asterisk greater;
+    # ignore sub less' asterisk greater greater;
+    # sub SPC SPC greater' by less_asterisk_greater.liga;
+    # sub SPC asterisk' greater by SPC;
+    # sub less' asterisk greater by SPC;
   } less_asterisk_greater.liga;
 
   # >=
@@ -1064,12 +1064,12 @@ feature calt {
 
   # >===</
   lookup equal_equal_equal.liga__ALT__ {
-    sub greater SPC SPC equal' less slash by equal_equal_equal.liga;
-    sub greater SPC equal' equal less slash by SPC;
-    sub greater equal' equal equal less slash by SPC;
-    sub greater SPC SPC equal' SPC less_slash.liga by equal_equal_equal.liga;
-    sub greater SPC equal' equal SPC less_slash.liga by SPC;
-    sub greater equal' equal equal SPC less_slash.liga by SPC;
+    # sub greater SPC SPC equal' less slash by equal_equal_equal.liga;
+    # sub greater SPC equal' equal less slash by SPC;
+    # sub greater equal' equal equal less slash by SPC;
+    # sub greater SPC SPC equal' SPC less_slash.liga by equal_equal_equal.liga;
+    # sub greater SPC equal' equal SPC less_slash.liga by SPC;
+    # sub greater equal' equal equal SPC less_slash.liga by SPC;
   } equal_equal_equal.liga__ALT__;
 
   # !=
@@ -1153,10 +1153,10 @@ feature calt {
     sub @EqualStart bar' equal by bar_equal.mid.seq;
     sub @EqualStart bar' by bar_equal.end.seq;
     sub bar' equal by bar_equal.sta.seq;
-    ignore sub colon colon' equal;
-    ignore sub equal.end.seq colon' colon;
-    sub colon' equal by colon.case;
-    sub [equal equal.end.seq] colon' by colon.case;
+    # ignore sub colon colon' equal;
+    # ignore sub equal.end.seq colon' colon;
+    # sub colon' equal by colon.case;
+    # sub [equal equal.end.seq] colon' by colon.case;
     sub equal' less equal by equal.sta.seq;
     ignore sub equal' less;
     sub equal' [less greater bar equal] by equal.sta.seq;
@@ -1196,10 +1196,10 @@ feature calt {
 
   # >--</
   lookup hyphen_hyphen.liga__ALT__ {
-    sub greater SPC hyphen' less slash by hyphen_hyphen.liga;
-    sub greater hyphen' hyphen less slash by SPC;
-    sub greater SPC hyphen' SPC less_slash.liga by hyphen_hyphen.liga;
-    sub greater hyphen' hyphen SPC less_slash.liga by SPC;
+    # sub greater SPC hyphen' less slash by hyphen_hyphen.liga;
+    # sub greater hyphen' hyphen less slash by SPC;
+    # sub greater SPC hyphen' SPC less_slash.liga by hyphen_hyphen.liga;
+    # sub greater hyphen' hyphen SPC less_slash.liga by SPC;
   } hyphen_hyphen.liga__ALT__;
 
   # ---
@@ -1214,12 +1214,12 @@ feature calt {
 
   # >---</
   lookup hyphen_hyphen_hyphen.liga__ALT__ {
-    sub greater SPC SPC hyphen' less slash by hyphen_hyphen_hyphen.liga;
-    sub greater SPC hyphen' hyphen less slash by SPC;
-    sub greater hyphen' hyphen hyphen less slash by SPC;
-    sub greater SPC SPC hyphen' SPC less_slash.liga by hyphen_hyphen_hyphen.liga;
-    sub greater SPC hyphen' hyphen SPC less_slash.liga by SPC;
-    sub greater hyphen' hyphen hyphen SPC less_slash.liga by SPC;
+    # sub greater SPC SPC hyphen' less slash by hyphen_hyphen_hyphen.liga;
+    # sub greater SPC hyphen' hyphen less slash by SPC;
+    # sub greater hyphen' hyphen hyphen less slash by SPC;
+    # sub greater SPC SPC hyphen' SPC less_slash.liga by hyphen_hyphen_hyphen.liga;
+    # sub greater SPC hyphen' hyphen SPC less_slash.liga by SPC;
+    # sub greater hyphen' hyphen hyphen SPC less_slash.liga by SPC;
   } hyphen_hyphen_hyphen.liga__ALT__;
 
   # <!--
@@ -2325,18 +2325,18 @@ feature ss11 {
 
   # ?=
   lookup question_equal.liga.ss11 {
-    ignore sub question question' equal;
-    ignore sub question' equal @IgnoreEqual;
-    sub SPC equal' by question_equal.liga.ss11;
-    sub question' equal by SPC;
+    # ignore sub question question' equal;
+    # ignore sub question' equal @IgnoreEqual;
+    # sub SPC equal' by question_equal.liga.ss11;
+    # sub question' equal by SPC;
   } question_equal.liga.ss11;
 
   # ?= in cv62
   lookup question_equal.liga.cv62.ss11 {
-    ignore sub question.cv62 question.cv62' equal;
-    ignore sub question.cv62' equal @IgnoreEqual;
-    sub SPC equal' by question_equal.liga.cv62.ss11;
-    sub question.cv62' equal by SPC;
+    # ignore sub question.cv62 question.cv62' equal;
+    # ignore sub question.cv62' equal @IgnoreEqual;
+    # sub SPC equal' by question_equal.liga.cv62.ss11;
+    # sub question.cv62' equal by SPC;
   } question_equal.liga.cv62.ss11;
 
   # ??=
