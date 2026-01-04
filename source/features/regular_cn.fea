@@ -50,6 +50,14 @@ languagesystem latn ROM;
 languagesystem latn MOL;
 languagesystem latn CAT;
 
+feature kern {
+
+  lookup punc_quote_narrow {
+    pos @punc' <0 0 -500 0> @quote;
+  } punc_quote_narrow;
+
+} kern;
+
 feature aalt {
 
   feature locl;
@@ -351,11 +359,6 @@ feature zero {
 
 feature calt {
 
-  lookup punc_quote_narrow {
-    # 当前标点 + 后面是引号 → 当前标点 xAdvance -500
-    pos @punc' <0 0 -500 0> @quote;
-  } punc_quote_narrow;
-    
   lookup uppercase_colon {
     sub [@Digit @Uppercase] colon' [@Digit @Uppercase] by colon.case;
   } uppercase_colon;
