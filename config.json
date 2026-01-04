@@ -72,7 +72,7 @@
   "nerd_font": {
     "enable": true,
     "version": "3.4.0",
-    "mono": false,
+    "mono": true,
     "propo": false,
     "use_font_patcher": false,
     "glyphs": [
@@ -87,7 +87,7 @@
     "clean_cache": false,
     "narrow": false,
     "use_hinted": false,
-    "use_static_base_font": true,
+    "use_static_base_font": false,
     "scale_factor": 1.0
   }
 }
